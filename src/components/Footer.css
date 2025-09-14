@@ -1,0 +1,121 @@
+.footer-section {
+  background-color: #0b1a5a;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-logo h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0 20px;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 350px;
+}
+
+.footer-links,
+.footer-contact {
+  width: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #ccc;
+  width: auto;           /* this can stay or be removed */
+  font-size: 16px;
+  margin-bottom: 10px;   /* keeps spacing between list items */
+  display: inline;       /* ✅ only the text is clickable now */
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: white;
+}
+
+.footer-contact li {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #2a6fdb;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: #444;
+  margin: 20px 0;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-legal-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-links a:hover {
+  color: white;
+}

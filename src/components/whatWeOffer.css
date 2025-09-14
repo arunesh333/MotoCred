@@ -1,0 +1,138 @@
+.what-we-offer-section {
+  padding: 80px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 0;
+  width: auto;
+}
+
+/* ✅ Responsive orange underline – perfectly centered */
+.title-underline {
+  display: flex;              /* makes the <hr> a block element */
+  width: 100px;    
+  align-content:center ;             /* length of the orange line; adjust if needed */
+  height: 4px;                 /* thickness of the line */
+  margin: 10px auto 50px;      /* auto left/right centers it below the title */
+  background-color: #ff8c00;   /* orange color */
+  border: none;                /* remove default HR border */
+  border-radius: 2px;          /* optional: slightly rounded edges */
+}
+
+.offer-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.customer-group {
+  justify-content: flex-start;
+}
+
+.dealer-group {
+  justify-content: flex-start;
+}
+
+.group-text {
+  flex-shrink: 0;
+  max-width: 250px;
+  text-align: left;
+}
+
+.group-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0b1a5a;
+}
+
+.group-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.offer-cards-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.offer-card {
+  background-color: #0b1a5a;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.3s ease;
+  overflow: hidden;
+}
+
+.offer-card:hover {
+  transform: scale(1.1) rotate(-1deg);
+  border-radius: 20px;
+  background-color: #f7f9fc;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.initial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.offer-card:hover .initial-content {
+  opacity: 0;
+}
+
+.hover-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  color: #0b1a5a;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.offer-card:hover .hover-content {
+  opacity: 1;
+}
+
+.offer-icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.offer-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
